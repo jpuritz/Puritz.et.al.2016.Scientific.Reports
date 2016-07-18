@@ -1,11 +1,11 @@
 #Filter initial Variant Calls
-1. Start with raw vcf file and change all genotypes with less than 5 reads to missing data  
-   This inital calls can be found [here](https://dx.doi.org/10.6084/m9.figshare.3490226)
+1. Start with raw vcf file and change all genotypes with less than 5 reads to missing data     
+   This inital calls can be found [here](https://dx.doi.org/10.6084/m9.figshare.3490226)  
       The file needs to be unzipped before starting this workflow.
 ```sh
 vcftools --vcf TotalRawSNPs.vcf --recode-INFO-all --minDP 5 --out TRSdp5 --recode
 ```
-   You will get a new filtered vcf file callled `TRSdp5.recode.vcf`
+    You will get a new filtered vcf file callled `TRSdp5.recode.vcf`
 2.  Now filter out all variants that are present below a minor allele frequency of 1% and are not called in at least 50% of samples
 
 ```sh
