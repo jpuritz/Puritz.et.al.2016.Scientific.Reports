@@ -192,7 +192,7 @@ vcftools --vcf SNP.TRSdp5MIp25g9HWE.filtered.vcf --exclude-positions TotalBadSNP
 vcftools --vcf SNP.TRSdp5MIp25g9HWEHFv.recode.vcf --recode-INFO-all --max-alleles 2 --out SNP.TRSdp5MIp25g9HWEHFv2a --recode
 rad_haplotyper.pl -v SNP.TRSdp5MIp25g9HWEHFv2a.recode.vcf -p popmap -r reference.fasta -x 15 -mp 5 -g Final_Haps.gen 
 ```
-Find Final_Haps.gen [here](./https://dx.doi.org/10.6084/m9.figshare.34902290 or here (./Final_Haps.gen).
+Find Final_Haps.gen [here](./https://dx.doi.org/10.6084/m9.figshare.34902290 or [here] (./Final_Haps.gen).
 
 
 
